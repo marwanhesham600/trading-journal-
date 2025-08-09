@@ -307,7 +307,7 @@ if not df_all.empty:
     sel = st.selectbox("Select trade ID", options=trade_ids)
     if sel:
         tr = df[df['id']==sel].iloc[0]
-        st.markdown(f"**Symbol:** {tr.get('symbol','')}, **Entry:** {tr.get('entry_price','')}, **Exit:** {tr.get('exit_price','')}
+        st.markdown(f"**Symbol:** {tr.get('symbol','')}, **Entry:** {tr.get('entry_price','')}, **Exit:** {tr.get('exit_price','')}")
 
 **Notes:** {tr.get('notes','')}
 
